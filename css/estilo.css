@@ -1,0 +1,119 @@
+:root{
+	--colorVermelho: #E50914;
+	--colorPreto: #141414;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/* ---------------------------- Incluindo font da logo ------------------------------------  */
+@font-face{
+	font-family: bebas;
+	src: url('./font/BebasNeue.otf');
+}
+
+/* ---------------------------- Modificando cor de fundo ------------------------------------  */
+body{
+	background-color: var(--colorPreto);
+	color: #fff;
+}
+
+/* ---------------------------- Elementos dos itens do topo ------------------------------------  */
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+}
+
+header h1{
+	color: var(--colorVermelho);
+	font-family: bebas;
+	letter-spacing: 4px;
+}
+
+header nav ul{
+	margin-left: 40px;
+}
+
+header nav ul a{
+	font-family: arial;
+	margin-right: 15px;
+	font-size: 15px;
+	color: #aaa;
+}
+
+header nav ul .active{
+	color: #fff;
+	font-weight: bold;
+}
+
+nav ul a:hover{
+	color:#fff;
+}
+
+/* ---------------------------- Elementos do banner ------------------------------------  */
+.banner-principal{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	font-family: arial;
+	font-size: 18px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../imagens/banner/bowie.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 80vh;
+}
+
+.banner-principal .container{
+	margin: 15% 0 50px 0;
+	margin-left: 20px;
+	width: 70%;
+}
+
+.container h3{
+	font-size: 40px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.container p{
+	margin-bottom: 20px;
+}
+
+.botoes button{
+	background-color: rgba(0,0,0,.50);
+	color: #fff;
+	border: none;
+	padding: 15px 30px;
+	margin-right: 15px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: #fff;
+	color: #000;
+	transition: .5s ease all;
+}
+
+.botoes i{
+	margin-right: 5px;
+}
+
+/* ---------------------------- Imagens dos artistas ------------------------------------  */
+.carousel-musicas{
+	margin-top: 5px;
+}
+
+.item-musica{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
